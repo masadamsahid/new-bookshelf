@@ -1,0 +1,312 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    padding: 2em;
+    width: 40%;
+    margin: auto;
+    border-radius: 1em;
+}
+
+.copyright{
+    margin: auto;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(171, 171, 171);
+    background-image: url("https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1561760443000/photosp/aef02960-60f5-4b9b-ac82-7cbe9703d945/stock-photo-backgrounds-colorful-bookshelf-library-colourful-background-books-in-the-library-library-books-aef02960-60f5-4b9b-ac82-7cbe9703d945.jpg");
+}
+
+
+header nav{
+    padding: 1em;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    width: 70%;
+    border-radius: 1em;
+    margin: .5em auto;
+}
+
+header nav .app-tittle{
+    flex: 100%;
+    margin: auto;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 2em;
+}
+
+main aside, #konten{
+    /*box-shadow: 0 0 2px 2px #00d5ff;*/
+    display: flex;
+}
+
+main aside{
+    flex: 20%;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+#konten{
+    flex: 70%;
+}
+
+#pencarian{
+    padding: .5em;
+    display: flex;
+    height: fit-content;
+}
+
+#pencarian *{
+    margin: auto;
+}
+
+#cari{
+    background-color: rgba(219, 219, 219, 1);
+    flex: 95%;
+    padding: .5em;
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0 0 1px 1px transparent;
+    border-radius: .25em;
+    transition: all .3s;
+}
+
+#cari:focus{
+    background-color: white;
+    border: 1px solid dodgerblue;
+    box-shadow: 0 0 1px 2px dodgerblue;
+}
+
+#go-cari{
+    flex: 10%;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin: auto 1em;
+    border-radius: .5em;
+
+    background: rgba(0, 0, 0, .8);
+    outline: none;
+    border: none;
+    box-shadow: 0 .5em rgba(0, 0, 0, 1);
+    padding:.5em;
+    transition: all .15s ease-in-out;
+}
+
+#go-cari:hover{
+    background-color: rgba(0, 0, 0, .9);
+}
+
+#go-cari:active{
+    box-shadow: none;
+    transform: translateY(.5em);
+}
+
+#tambah-buku{
+    padding: .5em;
+}
+
+.input-wrapper{
+    width: 100%;
+    margin: 1em auto;
+    padding: 0;
+}
+
+.input-wrapper label{
+    display: block;
+}
+
+input[type=text]{}
+
+.input-wrapper input{
+    background-color: rgba(219, 219, 219, 1);
+    width: 95%;
+    padding: .5em;
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0 0 1px 1px transparent;
+    border-radius: .25em;
+    transition: all .3s;
+    /*border: 2px solid rgba(0,213,255, .5);*/
+    /*!*on hover*!*/
+    /*box-shadow: 0 0 2px 2px rgba(0,213,255, .5);*/
+}
+
+
+.input-wrapper input:focus{
+    background-color: white;
+    border: 1px solid dodgerblue;
+    box-shadow: 0 0 1px 2px dodgerblue;
+}
+
+.input-wrapper label{
+    font-size: .75em;
+}
+
+.input-wrapper label[for="is-dibaca"]{
+    display: inline-block;
+    margin: 0;
+    flex: unset;
+}
+
+.fit{
+    display: unset;
+}
+
+#is-dibaca{
+    display: inline-block;
+    flex: unset;
+    width: fit-content;
+}
+
+.btn{
+
+}
+
+.btn-tambah{
+    width: 70%;
+    display: block;
+    color: white;
+    background: rgba(0, 0, 0, .8);
+    outline: none;
+    border: none;
+    box-shadow: 0 .5em rgba(0, 0, 0, 1);
+    font-size: 1em;
+    font-weight: 550;
+    border-radius: .5em;
+    padding:.5em;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+    margin: .5em auto;
+}
+
+.btn-tambah:hover{
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.btn-tambah:active{
+    box-shadow: none;
+    transform: translateY(.5em);
+}
+
+#konten{
+    display: flex;
+    padding: 0;
+}
+
+.bookshelf{
+    background-color: white;
+    flex: 40%;
+    padding: .5em;
+}
+
+.bookshelf h1{
+    color: black;
+    margin-bottom: 1em;
+}
+
+.item-buku{
+    margin-top: 1em;
+    border: 2px solid black;
+    border-radius: .25em;
+    display: flex;
+}
+
+.item-buku h3{
+    color: black;
+}
+
+.judul{
+    border-bottom: 2px solid black;
+    width: fit-content;
+    padding-right: 1em;
+    margin-bottom: .5em;
+}
+
+.item-buku p{
+    font-size: .75em;
+}
+
+.part1{
+    flex: 80%;
+    padding: .25em;
+}
+
+.part2{
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.part2 *{
+    flex: 50%;
+    font-size: .75em;
+}
+
+.btn{
+    padding: .25em;
+    background-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.is-selesai{
+    color: green;
+}
+
+.is-selesai:hover{
+    background-color: green;
+    color: white;
+}
+
+.hapus{
+    color: darkred;
+}
+
+.hapus:hover{background-color: darkred;color: white}
+
+#warning{
+    margin: 1em auto;
+    padding: .5em;
+    background-color: gray;
+    color: white;
+    border-radius: .5em;
+    width: fit-content;
+}
+
+#warning p{
+    font-size: .75em;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
